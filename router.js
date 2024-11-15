@@ -1,7 +1,14 @@
 const express = require('express');
 const router = express.Router();
+// Necesitamos que el router también rediriga al public para que se lea el css y las imagenes
+const path = require('path');
+router.use(express.static(path.join(__dirname, 'public')));
 //const { consultarActivos, insertarProducto,borrarProducto } = require('./database/db'); // consultas CRUD de la base de datos
 router.get('/', (req, res) => { //lo que esta '....' es la ruta para la que se define el get
+    res.render('pages/index');//renderiza la vista index ubicada en la carpeta pages
+});
+
+router.get('pages/index', (req, res) => { //lo que esta '....' es la ruta para la que se define el get
     res.render('pages/index');//renderiza la vista index ubicada en la carpeta pages
 });
 

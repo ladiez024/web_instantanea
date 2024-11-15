@@ -1,0 +1,85 @@
+.lato-thin {
+font-family: "Lato", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+
+.lato-light {
+font-family: "Lato", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.lato-regular {
+font-family: "Lato", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.lato-bold {
+font-family: "Lato", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.lato-black {
+font-family: "Lato", sans-serif;
+font-weight: 900;
+font-style: normal;
+}
+
+.lato-thin-italic {
+font-family: "Lato", sans-serif;
+font-weight: 100;
+font-style: italic;
+}
+
+.lato-light-italic {
+font-family: "Lato", sans-serif;
+font-weight: 300;
+font-style: italic;
+}
+
+.lato-regular-italic {
+font-family: "Lato", sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+.lato-bold-italic {
+font-family: "Lato", sans-serif;
+font-weight: 700;
+font-style: italic;
+}
+
+.lato-black-italic {
+font-family: "Lato", sans-serif;
+font-weight: 900;
+font-style: italic;
+} 
+
+nav{
+    background-color: rgba(128, 182, 218,0.6);
+}
+
+h1{
+    color:#213D84;
+    font-size: 3rem;
+}
+/* Asegura que el contenedor se muestra encima */
+.overlay {
+    position: absolute; /* Permite colocar encima de otros elementos */
+    top: 70%; /* Ajusta según lo que desees */
+    left: 10%;
+    z-index: 10; /* Más alto que la imagen */
+}
+
+/* Estilo para que la imagen esté detrás */
+img {
+    position: relative;
+    z-index: 1;
+    object-fit: cover; /* Para que la imagen se ajuste */
+}
+.info{
+    background-color: rgba(249, 227, 108,0.6);
+}
